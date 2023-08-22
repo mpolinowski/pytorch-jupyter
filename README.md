@@ -35,4 +35,4 @@ docker run --gpus all -ti --rm \
 
 ### Verify PyTorch
 
-![Containerized PyTorch Dev Workflow](./PyTorch_Jupyter_Notebook_in_Docker_01.png)
+![Containerized PyTorch Dev Workflow](./notebooks/assets/PyTorch_Jupyter_Notebook_in_Docker_01.png)
