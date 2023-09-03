@@ -13,9 +13,11 @@ RUN apt-get update && \
         python3-opencv \
         libglib2.0-0
 
-# Upgrade pip
-RUN python3 -m pip install --upgrade pip
-RUN pip3 install jupyter
+# intall optional python deps
+RUN python -m pip install --upgrade pip
+RUN pip install jupyter
+RUN pip install ultralytics
+RUN python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 
 
 # Set the working directory
