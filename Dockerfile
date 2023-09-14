@@ -15,9 +15,19 @@ RUN apt-get update && \
 
 # intall optional python deps
 RUN python -m pip install --upgrade pip
+# jupyter notebooks
 RUN pip install jupyter
-RUN pip install ultralytics
-RUN python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+# fastdup https://github.com/visual-layer/fastdup
+RUN pip install fastdup
+RUN pip install opencv-python
+RUN pip install matplotlib matplotlib-inline
+RUN pip install pillow
+RUN pip install pyyaml
+# YOLO
+RUN pip install ultralytics lapx
+# Detectron2
+# RUN python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+
 
 
 # Set the working directory
