@@ -36,3 +36,19 @@ docker run --gpus all -ti --rm \
 ### Verify PyTorch
 
 ![Containerized PyTorch Dev Workflow](./notebooks/assets/PyTorch_Jupyter_Notebook_in_Docker_01.png)
+
+
+
+### Troubleshooting
+
+> `ERROR: Unexpected bus error encountered in worker. This might be caused by insufficient shared memory (shm).`
+
+Please note that PyTorch uses shared memory to share data between processes, so if torch multiprocessing is used (e.g. for multithreaded data loaders) the default shared memory segment size that container runs with is not enough, and you should [increase shared memory size](https://github.com/pytorch/pytorch#using-pre-built-images) either with --ipc=host or --shm-size command line options to nvidia-docker run.
+
+
+```bash
+docker run --ipc=host --gpus all -ti --rm \
+    -v $(pwd):/opt/app -p 8888:8888 \
+    --name pytorch-jupyter \
+    pytorch-jupyter:latest
+```
