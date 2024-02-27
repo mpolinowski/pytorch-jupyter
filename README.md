@@ -2,6 +2,12 @@
 
 Develop your PyTorch models inside the official PyTorch container image __with__ Jupyter Notebooks.
 
+__Variations__:
+* Vanilla
+* [pytorch-jupyter with mlflow](https://github.com/mpolinowski/pytorch-jupyter/tree/mlflow)
+
+
+
 ## Running the Container
 
 Let's build this custom image with:
