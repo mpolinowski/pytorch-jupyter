@@ -20,13 +20,13 @@ RUN pip install jupyter
 # fastdup https://github.com/visual-layer/fastdup
 RUN pip install fastdup
 RUN pip install opencv-python
-RUN pip install matplotlib matplotlib-inline
+RUN pip install matplotlib matplotlib-inline pandas
 RUN pip install pillow
 RUN pip install pyyaml
 # YOLO
 RUN pip install ultralytics Cython>=0.29.32 lapx>=0.5.5
-# Detectron2
-# RUN python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+# MLFlow
+RUN pip install mlflow pytorch_lightning hyperopt
 
 
 
