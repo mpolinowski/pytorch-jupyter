@@ -1,6 +1,11 @@
 # Containerized PyTorch Dev Workflow 
 
-Develop your PyTorch models inside the official PyTorch container image __with__ Jupyter Notebooks.
+Develop your PyTorch models inside the official PyTorch container image __with__ Jupyter Notebooks + __MLFlow__.
+
+* [MLFlow with PyTorch Lighning in Docker](https://mpolinowski.github.io/docs/IoT-and-Machine-Learning/AIOps/2024-02-21-mlflow-pytorch-lightning-docker/2024-02-21)
+* [MLFlow Hyperparameter Tuning in Docker](https://mpolinowski.github.io/docs/IoT-and-Machine-Learning/AIOps/2024-02-24-mlflow-hyperparameter-tuning/2024-02-24)
+* [MLflow Integration for Ultralytics YOLOv8.1](https://mpolinowski.github.io/docs/IoT-and-Machine-Learning/AIOps/2024-02-26-mlflow-with-yolov81/2024-02-26)
+
 
 ## Running the Container
 
