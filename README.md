@@ -37,13 +37,6 @@ docker run --gpus all -ti --rm \
         http://127.0.0.1:8888/tree?token=8d72a759100e2c2971c4266bbcb8c6da5f743015eecd5255
 ```
 
-
-### Verify PyTorch
-
-![Containerized PyTorch Dev Workflow](./notebooks/assets/PyTorch_Jupyter_Notebook_in_Docker_01.png)
-
-
-
 ### Troubleshooting
 
 > `ERROR: Unexpected bus error encountered in worker. This might be caused by insufficient shared memory (shm).`
