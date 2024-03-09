@@ -27,6 +27,10 @@ RUN pip install pyyaml
 RUN pip install ultralytics Cython>=0.29.32 lapx>=0.5.5
 # MLFlow
 RUN pip install mlflow pytorch_lightning hyperopt
+# Ray
+RUN pip install "ray[tune]"
+# Gradio
+RUN pip install gradio
 
 
 

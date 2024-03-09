@@ -46,7 +46,7 @@ Please note that PyTorch uses shared memory to share data between processes, so 
 
 ```bash
 docker run --ipc=host --gpus all -ti --rm \
-    -v $(pwd):/opt/app -p 8888:8888 \
+    -v $(pwd):/opt/app -p 8888:8888 -p 5000:5000 -p 7861:7861 \
     --name pytorch-jupyter \
     pytorch-jupyter:latest
 ```

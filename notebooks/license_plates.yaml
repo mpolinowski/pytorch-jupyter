@@ -1,0 +1,6 @@
+names:
+- licensen plate
+path: ../datasets
+test: images/test
+train: images/train
+val: images/val
