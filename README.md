@@ -14,7 +14,7 @@ Let's build this custom image with:
 
 
 ```bash
-docker build -t pytorch-jupyter . -f Dockerfile
+docker buildx build -t pytorch-jupyter:latest . -f Dockerfile
 ```
 
 I can now create the container and mount my working directory into the container WORKDIR to get started:

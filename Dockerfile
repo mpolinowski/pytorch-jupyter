@@ -22,13 +22,15 @@ RUN pip install fastdup
 RUN pip install opencv-python
 RUN pip install matplotlib matplotlib-inline
 RUN pip install pillow
-RUN pip install pyyaml
+RUN pip install pyyaml pydantic
+# hugginface & unsloth
+RUN pip install trl
+RUN pip install unsloth
+RUN pip install --force-reinstall --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git
+RUN pip install datasets
+RUN pip install huggingface-hub
 # YOLO
 RUN pip install ultralytics Cython>=0.29.32 lapx>=0.5.5
-# Detectron2
-# RUN python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
-
-
 
 # Set the working directory
 WORKDIR /opt/app
